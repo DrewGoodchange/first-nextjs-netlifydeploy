@@ -1,3 +1,20 @@
 {
-	"siteId": "2053cf51-45ae-4972-9242-fce3fe4ff1f9"
+	"siteId": "2053cf51-45ae-4972-9242-fce3fe4ff1f9",
+	"geolocation": {
+		"data": {
+			"city": "St Louis",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "MO",
+				"name": "Missouri"
+			},
+			"timezone": "America/Chicago",
+			"latitude": 38.6287,
+			"longitude": -90.1988
+		},
+		"timestamp": 1700204937738
+	}
 }

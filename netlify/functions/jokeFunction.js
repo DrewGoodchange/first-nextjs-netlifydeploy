@@ -11,9 +11,14 @@ exports.handler = async (event, context) => {
       const joke = await response.json();
       // console.log('this is joke: ', joke);
 
-      return new NextResponse(joke.joke)
+      // return new NextResponse(joke.joke)
+      return {
+        statusCode:200,
+        body: JSON.stringify(joke.joke),
+      }
   } catch (error) {
       console.log(error)
-      return new NextResponse('There was an error in the backend')
+      // return new NextResponse('There was an error in the backend')
+      return 
   }
 };
