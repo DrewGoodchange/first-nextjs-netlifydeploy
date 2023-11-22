@@ -1,4 +1,4 @@
-exports.handler = async (event, context) => {
+exports.handler = async () => {
     try {
       // It's super important to remember the things you can do in a fetch request when it comes to HTTP capabilities. headers is just one of the different ways you can customize the type of data you get back.
       const response = await fetch('https://icanhazdadjoke.com/', {
