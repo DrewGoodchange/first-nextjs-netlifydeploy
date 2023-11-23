@@ -8,7 +8,7 @@ exports.handler = async (req, res) => {
         /* Start of roundup function */
 
         // Assign the incoming transactions array to a variable, don't forget to take away
-        const transArray = [397, 123, 265, 54, 431, 178, 309, 92, 487, 76];
+        const transArray = data.recentTransactions;
         
         // map over transactions, roundup each value
         const roundupArray = transArray.map(num => Math.ceil(num / 100) * 100);
