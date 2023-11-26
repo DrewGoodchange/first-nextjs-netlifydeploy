@@ -26,10 +26,12 @@ exports.handler = async (event) => {
             // return an obj with required params at minimum
             return {
                 statusCode: 200,
+                body: JSON.stringify({
                 transHistory: transArray,
                 roundup: roundupArray,
                 sum: differenceOfSums
-            };
+            })
+        };
     
         } catch (error) {
             console.log(error);
