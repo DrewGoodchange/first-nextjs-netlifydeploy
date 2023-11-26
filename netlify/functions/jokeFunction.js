@@ -9,7 +9,7 @@ exports.handler = async (event, context) => {
       // console.log('this is response: ', response);
 
       const joke = await response.json();
-      // console.log('this is joke: ', joke);
+      console.log('this is joke: ', joke);
 
       // return new NextResponse(joke.joke)
       return {
